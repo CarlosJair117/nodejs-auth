@@ -8,7 +8,7 @@ function checkApiKey() {
     next();
   }else {
     next(boom.unauthorized);
-  }
+   }
 }
 
 function checkAdminRole(req, res, next) {
