@@ -16,7 +16,7 @@ router.get('/my-orders',
     } catch (error) {
       next(error);
     }
-   }
+    }
 );
 
 module.exports = router;
