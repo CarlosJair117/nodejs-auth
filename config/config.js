@@ -9,6 +9,6 @@ const config = {
   jwtSecret: process.env.JWT_SECRET,
   smptEmail: process.env.SMPT_EMAIL,
   smptPassword: process.env.SMPT_PASSWORD
-}
+ }
 
 module.exports = { config };
