@@ -47,7 +47,7 @@ router.post('/',
       res.status(201).json(newCategory);
     } catch (error) {
       next(error);
-    }
+     }
   }
 );
 
