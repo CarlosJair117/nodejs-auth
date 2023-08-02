@@ -17,11 +17,11 @@ passport.authenticate('local', {session: false}),
     }
 });
 
-router.post('/recovery',
+router.post('/change-password',
   async (req, res, next) => {
     try {
-      const { email } = req.body;
-      const rta = await service.sendRecovery(email);
+      const { token, newPassword } = req.body;
+      const rta = await service.sendRecovery(token, newPassword);
       res.json(rta);
     } catch (error) {
       next(error);
